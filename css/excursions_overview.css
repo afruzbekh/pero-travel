@@ -1,0 +1,879 @@
+header {
+  height: 100vh;
+
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.35) 100%
+    ),
+    url("https://i.pinimg.com/originals/ab/12/b7/ab12b7397f3d91a953103e7626da9a5d.jpg"),
+    lightgray 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(9px);
+}
+.excursions_overview__hero {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+.excursions_overview__hero span {
+  color: var(--yellow, #ffc700);
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.excursions_overview__hero h1 {
+  margin: 10px 0 40px 0;
+  max-width: 761px;
+  color: var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.pagination_card__buttons-2 {
+  display: flex;
+  align-items: center;
+}
+
+.heart-container-2 {
+  cursor: pointer;
+  margin-left: 278px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  backdrop-filter: blur(2px);
+  display: grid;
+  place-items: center;
+}
+
+.heart-container-2 i {
+  font-size: 21px;
+  color: #ffffff;
+  transition: all 0.6s ease-in-out;
+}
+
+.heart-container-2.clicked i.fa-regular {
+  display: none;
+}
+
+.heart-container-2.clicked i.fa-solid {
+  display: inline-block;
+}
+.heart-container-2.clicked i.fa-solid {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.tour_description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tour_description-texts {
+  margin: 150px 0;
+}
+.tour_description-texts h2 {
+  color: var(--blue, #0499dd);
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.tour_description-texts p {
+  margin-top: 40px;
+  max-width: 382px;
+  color: #282828;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.dark-theme .tour_description-texts p {
+  color: #ffffff;
+}
+.tour_description-price-cards {
+  display: flex;
+  column-gap: 54px;
+  margin-top: 20px;
+}
+.price-card {
+  cursor: pointer;
+  display: grid;
+  width: 160px;
+  height: 100px;
+  padding: 20px 20px 25px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.price-card span {
+  color: var(--blue, #0499dd);
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.price-card p {
+  margin-top: 4px;
+  color: #282828;
+  font-family: Montserrat-Thin;
+  font-size: 14px;
+  text-align: center;
+  line-height: normal;
+}
+
+.dark-theme .price-card p {
+  color: #ffffff;
+}
+.price-card i {
+  color: #0499dd;
+  font-size: 18px;
+}
+
+.price-card-circle {
+  position: absolute;
+  margin-top: -17px;
+  margin-left: -18px;
+  width: 57px;
+  height: 57px;
+  background-color: #ffc700;
+  border-radius: 50%;
+  animation: moveCircle 6s infinite;
+  transition: all 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes moveCircle {
+  0% {
+    margin-top: -17px;
+    margin-left: -18px;
+  }
+  25% {
+    margin-top: 64px;
+    margin-left: 125px;
+  }
+  50% {
+    margin-top: -17px;
+  }
+  75% {
+    margin-left: -18px;
+  }
+  100% {
+    margin-top: 64px;
+  }
+}
+
+.calendar_section {
+  display: flex;
+}
+
+.calendar_section img {
+  max-width: 63.5%;
+  height: 115vh;
+  object-fit: cover;
+  border-radius: 0px 10px 10px 0px;
+}
+.calendar_wrapper h2 {
+  position: absolute;
+  margin-top: 120px;
+  right: 90px;
+  z-index: 6;
+  background-color: #ffffff;
+  color: var(--blue, #0499dd);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.dark-theme .calendar_wrapper h2 {
+  background-color: rgb(18, 18, 18);
+}
+.calendary_wrapper {
+  position: absolute;
+  margin-top: 240px;
+  right: 90px;
+  z-index: 6;
+  width: 560px;
+  height: 437px;
+  background: #ededed;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#month-calendar {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .calendary_wrapper {
+    width: 460px;
+    height: 406px;
+  }
+}
+
+@media (max-width: 468px) {
+  .calendary_wrapper {
+    width: 360px;
+    height: 366px;
+  }
+}
+
+@media (max-width: 360px) {
+  .calendary_wrapper {
+    width: 310px;
+    height: 396px;
+  }
+}
+
+.month {
+  margin: 0;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #0499dd;
+}
+
+@media (max-width: 468px) {
+  .month {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 365px) {
+  .month {
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
+
+.month-name {
+  margin-right: 5px;
+}
+
+.month li {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (max-width: 468px) {
+  .month li {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.month li.prev,
+.month li.next {
+  cursor: pointer;
+}
+
+.month li.prev {
+  float: left;
+}
+
+.month li.next {
+  float: right;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+.weekdays li {
+  display: inline-block;
+  flex: 0 0 calc(100% / 7);
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282828;
+}
+
+.days {
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: flex-start;
+  height: 14rem;
+  width: 560px;
+}
+
+@media (max-width: 576px) {
+  .days {
+    width: 460px;
+    padding: 5px 0px;
+  }
+}
+
+@media (max-width: 468px) {
+  .days {
+    width: 360px;
+    padding: 5px 0px;
+  }
+}
+
+.days li {
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 22px;
+  display: inline-block;
+  flex: 0 0 calc(560px / 7);
+  text-align: center;
+  font-family: "Montserrat-Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #282828;
+  transition: 0.3s ease-in-out;
+}
+
+.days li:hover {
+  background-color: #0499dd;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .days li {
+    flex: 0 0 calc(460px / 7);
+  }
+}
+
+@media (max-width: 468px) {
+  .days li {
+    flex: 0 0 calc(360px / 7);
+  }
+}
+
+@media (max-width: 360px) {
+  .days li {
+    flex: 0 0 calc(300px / 7);
+  }
+}
+
+.days li.date-now {
+  color: #000;
+  font-weight: 700;
+}
+
+.reveal {
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal__left {
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal__left.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.route_description {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+}
+.swiper-container {
+  overflow-x: hidden;
+}
+.route_description-texts {
+  margin-top: -70px;
+}
+
+.route_description-texts h2 {
+  margin-bottom: 90px;
+  color: var(--blue, #0499dd);
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.route_description-circle_text {
+  cursor: pointer;
+  margin-top: 21px;
+  display: flex;
+  column-gap: 26px;
+  transition: 0.5s ease-in-out;
+}
+.route_description-circle_text:hover span {
+  background-color: #0499dd; /* change this to the desired color */
+  transition: background-color 0.5s ease-in-out; /* adjust the duration and timing function as needed */
+}
+.route_description-circle_text span {
+  margin-top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffc700;
+  transition: background-color 0.3s ease-in-out; /* adjust the duration and timing function as needed */
+}
+
+.route_description-texts h3 {
+  margin: 40px 0 41px 38px;
+  font-family: Montserrat;
+}
+
+.route_description-circle_text p,
+.route_description-texts h3 {
+  width: 512px;
+  font-family: Montserrat-Thin;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.swiper-slide1 {
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 18px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  min-width: 413px !important;
+  height: 530px;
+  overflow: hidden;
+}
+
+.swiper2__bg-image {
+  aspect-ratio: 413/530 !important;
+  border-radius: 10px;
+  width: 101%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -10;
+}
+
+.swiper-slide1::after {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+.swiper-slide1:hover .swiper2__bg-image {
+  transform: scale(1);
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 61px;
+  transition: 0.6s ease;
+}
+
+.swiper-slide:hover .overlay1 {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay1-text {
+  padding: 0 23px;
+  color: var(--yellow, #ffc700);
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: normal;
+  position: absolute;
+  top: 22px;
+  text-align: center;
+}
+
+.overlay1-text-2 {
+  position: absolute;
+  top: 60px;
+  padding: 0 23px;
+  color: var(--yellow, #ffc700);
+  font-family: Montserrat-Thin;
+  font-size: 14px;
+  line-height: normal;
+  text-align: justify;
+}
+
+.additioanal-costs h2 {
+  margin-bottom: 107px;
+  color: var(--blue, #0499dd);
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.tour_description-price-cards-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 70px;
+  row-gap: 57px;
+}
+
+.important-message-section h2 {
+  color: var(--blue, #0499dd);
+  font-family: Montserrat;
+  font-size: 24px;
+  margin-bottom: 90px;
+}
+
+.important-message-section-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.important-message-texts-h4 {
+  max-width: 550px;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.passport-section {
+  margin-top: 40px;
+  display: flex;
+  column-gap: 45px;
+  align-items: flex-start;
+}
+
+.yellow-circle-id-card {
+  width: 50px;
+  height: 50px;
+  background-color: #ffc700;
+  border-radius: 50%;
+}
+
+.passport-section i {
+  margin-top: -25px;
+  margin-left: 20px;
+  position: absolute;
+  color: #393939;
+  font-size: 42px;
+}
+
+.dark-theme .passport-section i {
+  color: #ededed;
+}
+
+.passport-section h5 {
+  color: var(--blue, #0499dd);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.passport-section p {
+  font-family: Montserrat-Thin;
+  font-size: 14px;
+  max-width: 455px;
+  line-height: normal;
+}
+
+.important-message-section-box {
+  display: flex;
+  align-items: center;
+  padding: 23px 25px;
+  border-radius: 10px;
+  background: var(--gray-2, #ededed);
+  max-width: 360px;
+  min-height: 131px;
+}
+.important-message-section-box i {
+  opacity: 0.4;
+  color: #ffc700;
+  font-size: 96px;
+}
+
+.important-message-section-box p span {
+  font-family: Montserrat;
+}
+.important-message-section-box p {
+  color: #282828;
+  font-family: Montserrat-Thin;
+  font-size: 14px;
+  line-height: normal;
+}
+.booking-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-section img {
+  max-width: 53%;
+  border-radius: 0px 10px 0px 0px;
+  object-fit: cover;
+  height: 640px;
+}
+
+.booking {
+  margin-left: 60px;
+  margin-right: 110px;
+  align-items: flex-start;
+}
+.booking-h2 {
+  color: var(--blue, #0499dd);
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: normal;
+  margin-bottom: 90px;
+}
+
+.booking-buttons {
+  display: flex;
+  column-gap: 50px;
+}
+
+.tour_deteails__btn-2 {
+  width: 265px;
+  height: 50px;
+  border-radius: 60px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1024px) {
+  .excursions_overview__hero {
+    transform: translateY(112%);
+  }
+  .excursions_overview__hero h1 {
+    font-size: 36px;
+  }
+
+  .tour_description {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .tour_description-texts {
+    margin: 150px 0 77px 0;
+  }
+
+  .tour_description-texts p {
+    max-width: 100%;
+  }
+
+  .tour_description-price-cards {
+    margin-bottom: 150px;
+  }
+
+  .calendar_section img {
+    width: 60%;
+    height: 877px;
+  }
+
+  .calendary_wrapper {
+    position: absolute;
+    margin-top: 250px;
+    right: 80px;
+    z-index: 6;
+    width: 560px;
+    height: 437px;
+  }
+
+  .route_description {
+    display: flex;
+    align-items: center;
+    row-gap: 81px;
+    flex-direction: column;
+  }
+  .route_description-circle_text p,
+  .route_description-texts h3 {
+    width: 100%;
+  }
+  .swiper-wrapper1 {
+    margin-left: -150px;
+  }
+
+  .swiper-buttons {
+    margin-left: 1448px;
+  }
+
+  .tour_description-price-cards-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 45px;
+  }
+
+  .important-message {
+    display: none;
+  }
+
+  .booking-section img {
+    max-width: 43%;
+    object-fit: cover;
+    height: 640px;
+  }
+
+  .tour_location-booking,
+  .tour_date-booking,
+  .tour_number-of-people-booking {
+    max-width: 315px;
+  }
+
+  .booking-buttons {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .tour_deteails__btn-2 {
+    width: 245px;
+    height: 50px;
+    border-radius: 60px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 745px) {
+  .excursions_overview__hero {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+  }
+  .excursions_overview__hero h1 {
+    font-size: 34px;
+  }
+
+  .tour_description-price-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 57px;
+    column-gap: 30px;
+  }
+
+  .calendary_wrapper {
+    position: absolute;
+    margin-top: 250px;
+    right: 0;
+    z-index: 6;
+    width: 100%;
+    height: 437px;
+  }
+  .calendar_wrapper h2 {
+    right: 25px;
+  }
+
+  .swiper-wrapper1 {
+    margin-left: 0;
+  }
+
+  .swiper-buttons {
+    margin-left: 1607px;
+  }
+  .swiper-slide1 {
+    height: 540px;
+    min-width: 280px !important;
+  }
+
+  .swiper2__bg-image {
+    aspect-ratio: 280/540 !important;
+  }
+
+  .tour_description-price-cards-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 50px;
+  }
+
+  .booking-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-bottom: 150px;
+  }
+
+  .booking-section img {
+    max-width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .booking {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-start;
+  }
+  .price-card {
+    max-width: 150px;
+    height: 100px;
+  }
+  .price-card-circle {
+    display: none;
+  }
+
+  .heart-container-2 {
+    margin-left: auto;
+  }
+
+  .reveal,
+  .reveal__left {
+    transform: translateY(120px);
+  }
+}

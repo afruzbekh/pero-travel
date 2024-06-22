@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pero Travel</title>
+    <link rel="icon" href="./images/logo-with-color.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./fonts/Montserrat-SemiBold.ttf" />
+    <link rel="stylesheet" href="./fonts/Montserrat-Regular.ttf" />
+    <link rel="stylesheet" href="./fonts/mr_kindlyjasmineg.otf" />
+    <link rel="stylesheet" href="./fonts/SansSerifBookFLF.otf" />
+    <link rel="stylesheet" href="./fonts/Montserrat-ExtraBold.ttf" />
+  </head>
+  <body>
+    <section class="preloader">
+      <div class="container">
+        <div class="item item-1">P</div>
+        <div class="item item-2">E</div>
+        <div class="item item-3">R</div>
+        <div class="item item-4">O</div>
+      </div>
+    </section>
+    <header class="header" id="navigation-menu">
+      <video autoplay muted loop id="bg-video">
+        <source src="./images/nav-bar-bg-video.mp4" type="video/webm" />
+      </video>
+      <div class="nav-bg">
+        <div class="container">
+          <nav class="navbar">
+            <a href="#navigation-menu" class="nav-logo js-anchor-link"
+              ><img src="./images/logo-header.svg" alt=""
+            /></a>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#navigation-menu" class="nav-link js-anchor-link"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./excursion.html" class="nav-link js-anchor-link"
+                  >Экскурсии</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#myservices" class="nav-link js-anchor-link"
+                  >Личный кабинет</a
+                >
+              </li>
+              <li
+                class="theme-toggle-div"
+                title="Click to change for Dark/Light theme"
+              >
+                <input type="checkbox" id="theme-toggle" />
+                <label for="theme-toggle"></label>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero">
+          <div class="slogo">
+            <h1 class="travel">ПУТЕШЕСТВУЙ</h1>
+            <span class="without">вместе с</span> <br />
+            <span class="company_name">PERO TRAVEL</span>
+            <a class="effect effect-1" href="./excursion.html">К экскурсиям</a>
+          </div>
+          <div class="hero__social-medias">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="fa-brands fa-vk"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="populare-excursions">
+            <h2>Популярные экскурсии</h2>
+            <span class="populare-excursions__span">Смотреть все</span>
+          </div>
+          <div
+            class="swiper-container swiper-container1"
+            style="position: relative"
+          >
+            <div class="swiper-wrapper swiper-wrapper1">
+              <div class="swiper-slide swiper-slide1">
+                <img
+                  class="swiper2__bg-image"
+                  src="https://images.unsplash.com/photo-1688380303719-bf812819080b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                  alt=""
+                />
+                <div class="swiper2__texts-div">
+                  <span class="tour-type">Автобусный тур</span>
+                  <h4 class="place-name">Обзорная по Сочи (из Адлера)</h4>
+                  <div class="price-time">
+                    <div class="time-info">
+                      <i
+                        class="fa-regular fa-clock"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__time">6 часов</span>
+                    </div>
+                    <div class="price-info">
+                      <i
+                        class="fa-solid fa-coins"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__price">618 ₽</span>
+                    </div>
+                  </div>
+                  <p class="swiper2__text">
+                    Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                    Экскурсия начнется с подъёма на гору Большой Ахун - это
+                    высшая точка (665 метров) на побережьи Сочи. На вершине горы
+                    Большой Ахун есть смотровая башня, построенная в 1935-36
+                    годах по проекту архитектора С. И. Воробьева...
+                  </p>
+                  <a
+                    class="more-btn more-btn-1 more-btn-tablet-1"
+                    href="./excursions_overview.html"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide1">
+                <img
+                  class="swiper2__bg-image"
+                  src="https://images.unsplash.com/photo-1604925182075-08fb6e0c47ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                  alt=""
+                />
+                <div class="swiper2__texts-div">
+                  <span class="tour-type">Конный тур</span>
+                  <h4 class="place-name">Конные прогулки</h4>
+                  <div class="price-time">
+                    <div class="time-info">
+                      <i
+                        class="fa-regular fa-clock"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__time">1,5 часа</span>
+                    </div>
+                    <div class="price-info">
+                      <i
+                        class="fa-solid fa-coins"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__price">1 809 ₽ </span>
+                    </div>
+                  </div>
+                  <p class="swiper2__text">
+                    Конные прогулки проходят в Лазурной долине. С долины
+                    открывается красивый вид на море, горы и лес. На всем пути
+                    следования экскурсии вас будут сопровождать опытные
+                    инструктора. Катание на лошадях или иппотерапия очень
+                    полезна для детей и взрослых...
+                  </p>
+                  <a
+                    class="more-btn more-btn-1"
+                    href="./excursions_overview.html"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide1">
+                <img
+                  class="swiper2__bg-image"
+                  src="https://images.unsplash.com/photo-1601701748979-be3215445510?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80"
+                  alt=""
+                />
+                <div class="swiper2__texts-div">
+                  <span class="tour-type">Квадротур</span>
+                  <h4 class="place-name">Пасть дракона</h4>
+                  <div class="price-time">
+                    <div class="time-info">
+                      <i
+                        class="fa-regular fa-clock"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__time">2,5 часа</span>
+                    </div>
+                    <div class="price-info">
+                      <i
+                        class="fa-solid fa-coins"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__price">3 515 ₽</span>
+                    </div>
+                  </div>
+                  <p class="swiper2__text">
+                    Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль
+                    белых скал и самшитовый лес к водопаду Глубокий Яр или
+                    "Пасть Дракона" (экскурсионное название). Высота водопада
+                    41,5 метр - это один из самых высоких водопадов Большого
+                    Сочи...
+                  </p>
+                  <a
+                    class="more-btn more-btn-1"
+                    href="./excursions_overview.html"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide1">
+                <img
+                  class="swiper2__bg-image"
+                  src="https://images.unsplash.com/photo-1561356762-3dfb83f1869f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                  alt=""
+                />
+                <div class="swiper2__texts-div" style="bottom: 65px">
+                  <span class="tour-type">Автобусный тур</span>
+                  <h4 class="place-name">Женский монастырь</h4>
+                  <div class="price-time">
+                    <div class="time-info">
+                      <i
+                        class="fa-regular fa-clock"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__time">4 часа</span>
+                    </div>
+                    <div class="price-info">
+                      <i
+                        class="fa-solid fa-coins"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__price">618 ₽</span>
+                    </div>
+                  </div>
+                  <p class="swiper2__text">
+                    Троице - Георгиевский женский монастырь расположен в селе
+                    Лесное в живописном месте, в котором гармонично сочетаются
+                    красотая руками человека. Это удивительное место расположено
+                    совсем недалеко от Чёрного моря - всего в 20 километрах
+                  </p>
+                  <a
+                    class="more-btn more-btn-1"
+                    href="./excursions_overview.html"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide1">
+                <img
+                  class="swiper2__bg-image"
+                  src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                  alt=""
+                />
+                <div class="swiper2__texts-div">
+                  <span class="tour-type">Автобусный тур</span>
+                  <h4 class="place-name">Обзорная по Сочи (из Адлера)</h4>
+                  <div class="price-time">
+                    <div class="time-info">
+                      <i
+                        class="fa-regular fa-clock"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__time">6 часов</span>
+                    </div>
+                    <div class="price-info">
+                      <i
+                        class="fa-solid fa-coins"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__price">618 ₽</span>
+                    </div>
+                  </div>
+                  <p class="swiper2__text">
+                    Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                    Экскурсия начнется с подъёма на гору Большой Ахун - это
+                    высшая точка (665 метров) на побережьи Сочи. На вершине горы
+                    Большой Ахун есть смотровая башня, построенная в 1935-36
+                    годах по проекту архитектора С. И. Воробьева...
+                  </p>
+                  <a class="more-btn more-btn-1 more-btn-tablet-1" href="#"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide1">
+                <img
+                  class="swiper2__bg-image"
+                  src="https://images.unsplash.com/photo-1581068414180-050836da1aff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                  alt=""
+                />
+                <div class="swiper2__texts-div">
+                  <span class="tour-type">Конный тур</span>
+                  <h4 class="place-name">Конные прогулки</h4>
+                  <div class="price-time">
+                    <div class="time-info">
+                      <i
+                        class="fa-regular fa-clock"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__time">1,5 часа</span>
+                    </div>
+                    <div class="price-info">
+                      <i
+                        class="fa-solid fa-coins"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__price">1 809 ₽ </span>
+                    </div>
+                  </div>
+                  <p class="swiper2__text">
+                    Конные прогулки проходят в Лазурной долине. С долины
+                    открывается красивый вид на море, горы и лес. На всем пути
+                    следования экскурсии вас будут сопровождать опытные
+                    инструктора. Катание на лошадях или иппотерапия очень
+                    полезна для детей и взрослых...
+                  </p>
+                  <a
+                    class="more-btn more-btn-1"
+                    href="./excursions_overview.html"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide1">
+                <img
+                  class="swiper2__bg-image"
+                  src="https://images.unsplash.com/photo-1617911478446-c7f1dd96966e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                  alt=""
+                />
+                <div class="swiper2__texts-div">
+                  <span class="tour-type">Квадротур</span>
+                  <h4 class="place-name">Пасть дракона</h4>
+                  <div class="price-time">
+                    <div class="time-info">
+                      <i
+                        class="fa-regular fa-clock"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__time">2,5 часа</span>
+                    </div>
+                    <div class="price-info">
+                      <i
+                        class="fa-solid fa-coins"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__price">3 515 ₽</span>
+                    </div>
+                  </div>
+                  <p class="swiper2__text">
+                    Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль
+                    белых скал и самшитовый лес к водопаду Глубокий Яр или
+                    "Пасть Дракона" (экскурсионное название). Высота водопада
+                    41,5 метр - это один из самых высоких водопадов Большого
+                    Сочи...
+                  </p>
+                  <a
+                    class="more-btn more-btn-1"
+                    href="./excursions_overview.html"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide1">
+                <img
+                  class="swiper2__bg-image"
+                  src="https://images.unsplash.com/photo-1608953029601-7a6e5e7fd548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80"
+                  alt=""
+                />
+                <div class="swiper2__texts-div" style="bottom: 63px">
+                  <span class="tour-type">Автобусный тур</span>
+                  <h4 class="place-name">Женский монастырь</h4>
+                  <div class="price-time">
+                    <div class="time-info">
+                      <i
+                        class="fa-regular fa-clock"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__time">4 часа</span>
+                    </div>
+                    <div class="price-info">
+                      <i
+                        class="fa-solid fa-coins"
+                        style="color: #ffffff; font-size: 13px"
+                      ></i>
+                      <span class="swiper2__price">618 ₽</span>
+                    </div>
+                  </div>
+                  <p class="swiper2__text">
+                    Троице - Георгиевский женский монастырь расположен в селе
+                    Лесное в живописном месте, в котором гармонично сочетаются
+                    красотая руками человека. Это удивительное место расположено
+                    совсем недалеко от Чёрного моря - всего в 20 километрах
+                  </p>
+                  <a
+                    class="more-btn more-btn-1"
+                    href="./excursions_overview.html"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-buttons"
+            style="
+              display: flex;
+              align-items: center;
+              margin-top: 35px;
+              margin-left: -19px;
+            "
+          >
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-chevron-right fa-rotate-180"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div
+              class="swiper-scrollbar"
+              style="margin-left: 51px; height: 5px"
+            >
+              <div class="swiper-scrollbar-drag"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin: 160px 0; padding-right: 30px">
+        <div class="about_us">
+          <img
+            class="about_us__img reveal"
+            src="./images/about-us-section-image.png"
+            alt=""
+          />
+          <div class="about_us__box-div">
+            <div class="about_us__box reveal__left">
+              <h3>О нас</h3>
+              <p>
+                PeroTravel - Первый онлайн-сервис по бронированию экскурсий без
+                очередей и операторов. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <p style="margin-top: 20px">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom: 250px">
+        <div class="container">
+          <div class="types_of_excursions">
+            <h2>Виды экскурсий</h2>
+            <div class="types_of_excursions__cards">
+              <div class="types_of_excursions__cards__card">
+                <img src="./images/bus-img.svg" alt="" />
+                <div class="types_of_excursions__cards__card-left">
+                  <h3>Автобусный тур</h3>
+                  <p>
+                    Один из самых насыщенных впечатлениями, доступных по цене и
+                    популярных видов отдыха. Во время одной поездки можно
+                    посмотреть достопримечательности сразу нескольких городов,
+                    причем обойдется это едва ли не в разы дешевле классического
+                    экскурсионного тура с ночевками в отелях.
+                  </p>
+                </div>
+              </div>
+              <div class="types_of_excursions__cards__card">
+                <img src="./images/car-img.svg" alt="" />
+                <div class="types_of_excursions__cards__card-left">
+                  <h3>Джиппинг</h3>
+                  <p>
+                    Это путешествие на автомобилях высокой проходимости с
+                    преодолением естественных препятствий, это экстремальный вид
+                    спорта и отдыха, представляющий собой прохождение
+                    туристического маршрута по бездорожью на автомобилях.
+                  </p>
+                </div>
+              </div>
+              <div class="types_of_excursions__cards__card">
+                <img src="./images/yacht-img.svg" alt="" />
+                <div class="types_of_excursions__cards__card-left">
+                  <h3>Яхтинг</h3>
+                  <p>
+                    Это то же, что круиз на лайнере или прогулка на пароме,
+                    только на яхте больше свободы, размеры судна в разы меньше,
+                    нет назойливой команды, можно самостоятельно почувствовать
+                    себя капитаном, постоять за штурвалом. Именно здесь вы
+                    почувствуете величайшие просторы Черногор моря.
+                  </p>
+                </div>
+              </div>
+              <div class="types_of_excursions__cards__card">
+                <img src="./images/volcano-img.svg" alt="" />
+                <div class="types_of_excursions__cards__card-left">
+                  <h3>Каньонинг</h3>
+                  <p>
+                    Это экстремально-спортивный вид отдыха, который заключается
+                    в преодолении каньонов (обводненных или нет) при помощи
+                    альпинистского и иного снаряжения, а иногда и вброд, но без
+                    лодок или иных плавсредств.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="types_of_excursions__text">
+              Выбирайте на нашем сайте экскурсию, которая подходит именно вам и
+              записывайтесь онлайн без очередей, просто и быстро!
+            </p>
+            <a
+              class="toe_btn toe_btn-1"
+              style="margin: 0 auto"
+              href="./excursion.html"
+              >К экскурсиям</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery_section" style="margin-bottom: 150px">
+        <div class="container gallery_section__div">
+          <h2>Галерея</h2>
+          <span class="populare-excursions__span">Смотреть все</span>
+        </div>
+
+        <div class="gallery__images-box" style="padding: 0 15px">
+          <div class="gallery__image-div1">
+            <img
+              class="gallery__image"
+              src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+              alt=""
+            />
+          </div>
+          <div class="gallery__image-div2">
+            <img
+              class="gallery__image"
+              src="https://images.unsplash.com/photo-1514258953601-4b8cf9cd6cb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+              alt=""
+            />
+          </div>
+          <div class="gallery__image-div3">
+            <img
+              class="gallery__image"
+              src="https://images.unsplash.com/photo-1575677155757-b5eb75df3a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+            />
+          </div>
+          <div class="gallery__image-div4">
+            <img
+              class="gallery__image"
+              src="https://images.unsplash.com/photo-1490682143684-14369e18dce8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+            />
+          </div>
+          <div class="gallery__image-div5">
+            <img
+              class="gallery__image"
+              src="https://images.unsplash.com/photo-1619477965760-0e44a6fd3163?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+            />
+          </div>
+          <div class="gallery__image-div6">
+            <img
+              class="gallery__image"
+              src="https://images.unsplash.com/photo-1501908734255-16579c18c25f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1228&q=80"
+              alt=""
+            />
+          </div>
+          <div class="gallery__image-div7">
+            <img
+              class="gallery__image"
+              src="https://images.unsplash.com/reserve/tdedkQnQGCgIhk9eoEkP_DSC_0983.JPG?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80"
+              alt=""
+            />
+          </div>
+          <div class="gallery__image-div8">
+            <img
+              class="gallery__image"
+              src="https://images.unsplash.com/photo-1542856391-010fb87dcfed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom: 160px">
+        <div class="container">
+          <div class="reviews">
+            <h2>Отзывы</h2>
+            <span class="populare-excursions__span">Смотреть все</span>
+          </div>
+          <div class="swiper-container my-swiper2">
+            <div class="swiper-wrapper swiper-wrapper2">
+              <div class="swiper-slide swiper-slide-reviews">
+                <div class="swiper-slide-reviews-image-div">
+                  <img
+                    class="swiper-slide-reviews-image"
+                    src="https://plus.unsplash.com/premium_photo-1687984123130-33f679b0242f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide-reviews-text">
+                  <h3>Иван Иванов, 25 лет</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <span>”</span>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-reviews">
+                <div class="swiper-slide-reviews-image-div">
+                  <img
+                    class="swiper-slide-reviews-image"
+                    src="https://images.unsplash.com/photo-1519307212971-dd9561667ffb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide-reviews-text">
+                  <h3>Иван Иванов, 25 лет</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <span>”</span>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-reviews">
+                <div class="swiper-slide-reviews-image-div">
+                  <img
+                    class="swiper-slide-reviews-image"
+                    src="https://plus.unsplash.com/premium_photo-1663099292567-152952f94d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide-reviews-text">
+                  <h3>Иван Иванов, 25 лет</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <span>”</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-buttons"
+              style="
+                display: flex;
+                align-items: center;
+                margin-top: 35px;
+                margin-left: -19px;
+              "
+            >
+              <div class="my-swiper-prev2 swiper-button-prev">
+                <i class="fa-solid fa-chevron-right fa-rotate-180"></i>
+              </div>
+              <div class="my-swiper-next2 swiper-button-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div
+                class="swiper-scrollbar my-swiper-scrollbar2"
+                style="
+                  margin-left: 51px;
+                  height: 4px;
+                  display: block;
+                  width: calc(
+                    100% - 1 * var(--swiper-scrollbar-sides-offset, 73%)
+                  );
+                "
+              >
+                <div class="swiper-scrollbar-drag"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form_section">
+        <div class="container">
+          <div class="form">
+            <form action="/" id="form-question" class="form-question">
+              <h2>Остались вопросы?</h2>
+              <span>Оставь заявку и мы ответим</span>
+              <input type="text" placeholder="Имя" required />
+              <input
+                type="text"
+                placeholder="Телефон"
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 43"
+                required
+              />
+              <input type="email" placeholder="Почта" required />
+              <button
+                id="btn"
+                type="submit"
+                form="form-question"
+                disabled="disabled"
+                value="Submit"
+              >
+                <p id="btnText">Оставить заявку</p>
+                <div class="checked">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path
+                      fill="transparent"
+                      d="M14.1 27.2l7.1 7.2 16.7-16.8"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-main-div">
+          <div class="footer-div-left">
+            <img src="./images/logo-with-color.svg" alt="" />
+          </div>
+          <div>
+            <ul class="footer-nav">
+              <li>
+                <a href="#navigation-menu">Главная</a>
+              </li>
+              <li>
+                <a href="./excursion.html">Экскурсии</a>
+              </li>
+              <li>
+                <a href="#myservices">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <div class="contacts-nav">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="tel:+79649441874">+7 964 944 18 74</a>
+            </div>
+            <div class="contacts-nav">
+              <i class="fa-brands fa-telegram"></i>
+              <a href="tel:+79189199828">+7 918 919 98 28</a>
+            </div>
+            <div class="contacts-nav">
+              <i class="fa-brands fa-telegram"></i>
+              <a href="#">Телеграм-бот PeroTravel</a>
+            </div>
+          </div>
+          <div class="contacts contacts-2">
+            <div class="contacts-nav">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:office@perotravel.ru">office@perotravel.ru</a>
+            </div>
+            <div
+              class="contacts-nav-logos"
+              style="display: flex; align-items: center; column-gap: 8px"
+            >
+              <a href="http://#" target="_blank" rel="noopener noreferrer">
+                <i
+                  class="fa-brands fa-vk"
+                  style="color: #bc0000; font-size: 23px"
+                ></i
+              ></a>
+              <a href="http://#" target="_blank" rel="noopener noreferrer">
+                <i
+                  class="fa-brands fa-instagram"
+                  style="color: #e59b06; font-size: 23px"
+                ></i>
+              </a>
+              <a href="http://#" target="_blank" rel="noopener noreferrer"
+                ><i
+                  class="fa-brands fa-facebook"
+                  style="color: #17c1bc; font-size: 20px"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2057 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pero Travel - ЭКСКУРСИИ</title>
+    <link rel="icon" href="./images/logo-with-color.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/excursion.css" />
+    <link rel="stylesheet" href="./fonts/Montserrat-SemiBold.ttf" />
+    <link rel="stylesheet" href="./fonts/Montserrat-Regular.ttf" />
+    <link rel="stylesheet" href="./fonts/mr_kindlyjasmineg.otf" />
+    <link rel="stylesheet" href="./fonts/SansSerifBookFLF.otf" />
+    <link rel="stylesheet" href="./fonts/Montserrat-ExtraBold.ttf" />
+  </head>
+  <body>
+    <section class="preloader">
+      <div class="container">
+        <div class="item item-1">P</div>
+        <div class="item item-2">E</div>
+        <div class="item item-3">R</div>
+        <div class="item item-4">O</div>
+      </div>
+    </section>
+    <header class="header_excursion" id="navigation-menu">
+      <div class="nav-bg">
+        <div class="container">
+          <nav class="navbar">
+            <a href="./index.html" class="nav-logo js-anchor-link"
+              ><img src="./images/logo-header.svg" alt=""
+            /></a>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link js-anchor-link"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./excursion.html" class="nav-link js-anchor-link"
+                  >Экскурсии</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#myservices" class="nav-link js-anchor-link"
+                  >Личный кабинет</a
+                >
+              </li>
+              <li
+                class="theme-toggle-div"
+                title="Click to change for Dark/Light theme"
+              >
+                <input type="checkbox" id="theme-toggle" />
+                <label for="theme-toggle"></label>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero_excursion">
+          <h1>НАШИ ЭКСКУРСИИ</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="type_of_tour">
+            <div class="type_of_tour-main-upper">
+              <div class="type_of_tour-upper">
+                <div class="text" data-text="АВТОБУСНЫЙ ТУР">
+                  АВТОБУСНЫЙ ТУР
+                </div>
+                <div class="text" data-text="ДЖИППИНГ">ДЖИППИНГ</div>
+                <div class="text" data-text="ЯХТИНГ">ЯХТИНГ</div>
+                <div class="text" data-text="КАНЬОНИНГ">КАНЬОНИНГ</div>
+              </div>
+              <div class="line">
+                <div class="blue-line"></div>
+              </div>
+            </div>
+            <div class="tour_deteails">
+              <div class="tour_location">
+                <p>Абхазия</p>
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="tour_date">
+                <p>10 ноября 2023</p>
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <div class="tour_number-of-people">
+                <p>5 человек</p>
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <button class="tour_deteails__btn">
+                Показать <i class="fa-solid fa-filter"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="filtres_and_our-tours">
+            <div class="filtres">
+              <h2>Фильтры</h2>
+              <div class="accordion">
+                <div>
+                  <div class="contentBx active">
+                    <div class="label">
+                      <h3>Стоимость</h3>
+                    </div>
+                    <div class="content">
+                      <div class="slider">
+                        <div class="colored-line" id="colored-line"></div>
+                        <div class="circle" id="circle1">
+                          <div class="inside-circle"></div>
+                        </div>
+                        <input
+                          onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 43"
+                          type="text"
+                          class="number"
+                          id="number1"
+                          value="1600"
+                          max="10000"
+                        />
+                        <div class="circle" id="circle2">
+                          <div class="inside-circle"></div>
+                        </div>
+                        <input
+                          onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 43"
+                          type="text"
+                          class="number"
+                          id="number2"
+                          value="4000"
+                          max="10000"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="accordion__line" />
+                </div>
+                <div>
+                  <div class="contentBx">
+                    <div class="label">
+                      <h3>Количество человек</h3>
+                    </div>
+                    <div class="content">
+                      <div class="number-of-people_div">
+                        <div class="number-of-people n_o_p-1">1 чел.</div>
+                        <div class="number-of-people n_o_p-2">2 чел.</div>
+                        <div class="number-of-people n_o_p-3">3 чел.</div>
+                        <div class="number-of-people n_o_p-4">4 чел.</div>
+                        <div class="number-of-people n_o_p-5">5 чел.</div>
+                        <div class="number-of-people n_o_p-6">6 чел.</div>
+                        <div class="number-of-people n_o_p-7">7 чел.</div>
+                        <div class="number-of-people n_o_p-8">8 чел.</div>
+                        <div class="number-of-people n_o_p-9">9 чел.</div>
+                        <div class="number-of-people n_o_p-10">10 чел.</div>
+                        <div
+                          class="number-of-people more-number-of-people n_o_p-11"
+                        >
+                          Больше 10 чел.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="accordion__line" />
+                </div>
+                <div>
+                  <div class="contentBx">
+                    <div class="label">
+                      <h3>Место</h3>
+                    </div>
+                    <div class="content">
+                      <div class="place-choosing">
+                        <div class="field-group">
+                          <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="Абхазия"
+                            class="checkbox-field"
+                            style="display: none"
+                          />
+                          <label for="Абхазия" class="checkbox-label"></label>
+                          <p for="Абхазия" class="checkbox-text">Абхазия</p>
+                        </div>
+                        <div class="field-group">
+                          <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="Красная поляна"
+                            class="checkbox-field"
+                            style="display: none"
+                          />
+                          <label
+                            for="Красная поляна"
+                            class="checkbox-label"
+                          ></label>
+                          <p for="Красная поляна" class="checkbox-text">
+                            Красная поляна
+                          </p>
+                        </div>
+                        <div class="field-group">
+                          <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="Сочи"
+                            class="checkbox-field"
+                            style="display: none"
+                          />
+                          <label for="Сочи" class="checkbox-label"></label>
+                          <p for="Сочи" class="checkbox-text">Сочи</p>
+                        </div>
+                        <div class="field-group">
+                          <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="Ташкент"
+                            class="checkbox-field"
+                            style="display: none"
+                          />
+                          <label for="Ташкент" class="checkbox-label"></label>
+                          <p for="Ташкент" class="checkbox-text">Ташкент</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="accordion__line" />
+                </div>
+                <div>
+                  <div class="contentBx">
+                    <div class="label">
+                      <h3>Длительность</h3>
+                    </div>
+                    <div class="content"></div>
+                  </div>
+                  <hr class="accordion__line" />
+                </div>
+                <div>
+                  <div class="contentBx">
+                    <div class="label">
+                      <h3>Дата</h3>
+                    </div>
+                    <div class="content"></div>
+                  </div>
+                  <hr class="accordion__line" />
+                </div>
+              </div>
+              <button
+                class="tour_deteails__btn"
+                style="
+                  border-radius: 40px;
+                  width: 225px;
+                  height: 40px;
+                  margin: 24px 0 12px 0;
+                "
+              >
+                Показать <i class="fa-solid fa-filter"></i>
+              </button>
+              <div class="reset_filter">
+                <i class="fa-solid fa-plus"></i>
+                <span>Сбросить фильтры</span>
+              </div>
+            </div>
+            <div class="our-tours">
+              <h2 class="our-tours__h2">Наши туры</h2>
+              <div class="our-tours__pagination">
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://i.pinimg.com/originals/ab/12/b7/ab12b7397f3d91a953103e7626da9a5d.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://i.pinimg.com/originals/ab/12/b7/ab12b7397f3d91a953103e7626da9a5d.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://i.pinimg.com/originals/ab/12/b7/ab12b7397f3d91a953103e7626da9a5d.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://i.pinimg.com/originals/ab/12/b7/ab12b7397f3d91a953103e7626da9a5d.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1501862700950-18382cd41497?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2019&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1501862700950-18382cd41497?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2019&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1501862700950-18382cd41497?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2019&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1501862700950-18382cd41497?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2019&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1559767180-47d8f4919e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1559767180-47d8f4919e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1559767180-47d8f4919e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1559767180-47d8f4919e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1494472155656-f34e81b17ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1494472155656-f34e81b17ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1494472155656-f34e81b17ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://images.unsplash.com/photo-1494472155656-f34e81b17ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1691031428777-eb1f65e3d1e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1691031428777-eb1f65e3d1e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1691031428777-eb1f65e3d1e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="our-tours__pagination-card">
+                  <div class="pagination_card__img">
+                    <img
+                      src="https://plus.unsplash.com/premium_photo-1691031428777-eb1f65e3d1e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pagination_card__texts">
+                    <h3
+                      class="tour-type"
+                      style="
+                        color: var(--yellow, #ffc700);
+                        font-family: Montserrat;
+                      "
+                    >
+                      Автобусный тур
+                    </h3>
+                    <h2>Золотое кольцо Абхазии (из Адлера)</h2>
+                    <div class="price-time_deteails" style="margin-top: 21px">
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          style="
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                          "
+                        >
+                          <i class="fa-solid fa-coins"></i>
+                          <span>1 618 ₽</span>
+                        </div>
+                        <div>
+                          <p>Взрослый билет</p>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: baseline;
+                          column-gap: 6px;
+                        "
+                      >
+                        <i class="fa-regular fa-clock"></i>
+                        <span style="display: inline">2,5 часа</span>
+                      </div>
+                    </div>
+                    <div class="pagination_card__texts-main">
+                      <hr />
+                      <p>
+                        Вас ждет путешествие по "Золотому Кольцу Абхазии" на
+                        Мерседес Спринтер (20 мест). По маршруту вас будет
+                        сопровождать профессиональный гид. Посадка на экскурсию
+                        осуществляется с вашего отеля или ближайшей автобусной
+                        остановки. Пересечение границы без пересадок...
+                      </p>
+                    </div>
+
+                    <div class="pagination_card__buttons">
+                      <a
+                        href="./excursions_overview.html"
+                        class="pagination_card__buttons-more pagination_card__buttons-more-1"
+                        >Подробнее</a
+                      >
+                      <div class="heart-container">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <li class="page-item previous-page">
+                    <a href="#" class="page-link"
+                      ><i class="fa-solid fa-angle-left"></i
+                    ></a>
+                  </li>
+                  <div
+                    class="pagination_numbers"
+                    style="
+                      display: flex;
+                      column-gap: 12px;
+                      margin: 2px 8px 0 8px;
+                    "
+                  >
+                    <li class="page-item current-page active-page">
+                      <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item current-page">
+                      <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item current-page">
+                      <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item current-page">
+                      <a href="#" class="page-link">4</a>
+                    </li>
+                    <li class="page-item current-page">
+                      <a href="#" class="page-link">5</a>
+                    </li>
+                  </div>
+                  <li class="page-item next-page">
+                    <a href="#" class="page-link"
+                      ><i class="fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-main-div">
+          <div class="footer-div-left">
+            <img src="./images/logo-with-color.svg" alt="" />
+          </div>
+          <div>
+            <ul class="footer-nav">
+              <li>
+                <a href="#navigation-menu">Главная</a>
+              </li>
+              <li>
+                <a href="./excursion.html">Экскурсии</a>
+              </li>
+              <li>
+                <a href="#myservices">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <div class="contacts-nav">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="tel:+79649441874">+7 964 944 18 74</a>
+            </div>
+            <div class="contacts-nav">
+              <i class="fa-brands fa-telegram"></i>
+              <a href="tel:+79189199828">+7 918 919 98 28</a>
+            </div>
+            <div class="contacts-nav">
+              <i class="fa-brands fa-telegram"></i>
+              <a href="#">Телеграм-бот PeroTravel</a>
+            </div>
+          </div>
+          <div class="contacts contacts-2">
+            <div class="contacts-nav">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:office@perotravel.ru">office@perotravel.ru</a>
+            </div>
+            <div
+              class="contacts-nav-logos"
+              style="display: flex; align-items: center; column-gap: 8px"
+            >
+              <a href="http://#" target="_blank" rel="noopener noreferrer">
+                <i
+                  class="fa-brands fa-vk"
+                  style="color: #bc0000; font-size: 23px"
+                ></i
+              ></a>
+              <a href="http://#" target="_blank" rel="noopener noreferrer">
+                <i
+                  class="fa-brands fa-instagram"
+                  style="color: #e59b06; font-size: 23px"
+                ></i>
+              </a>
+              <a href="http://#" target="_blank" rel="noopener noreferrer"
+                ><i
+                  class="fa-brands fa-facebook"
+                  style="color: #17c1bc; font-size: 20px"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/excursion.js" type="text/javascript"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
